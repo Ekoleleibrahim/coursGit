@@ -8,3 +8,4 @@ Lier un dépot local et distant, définir le dépot distant comme branche princi
 Lorsque nous travaillons sur un projet en équipe, il est indispensable d'etre toujours informé de toute les modifications et obtenir toujours des mises à jour des récents modification faite dans le dépot que vous suivez. les commandes comme: git fetch origin, git log origin/master, git diff origin/master et git pull origin, git branch -a, git branch -r
 # Etape4: Vérification des branches en locale et distante
 git branch -a (voir toute les branches locales et distantes), git branch -r (voir uniquement les branches distantes)
+# Etape5: Faire un Pull Request pour un projet 
