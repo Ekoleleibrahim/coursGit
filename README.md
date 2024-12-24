@@ -6,3 +6,5 @@ Ceci est mon premier apprentissage de Git et Github. les commande comme: mkdir, 
 Lier un dépot local et distant, définir le dépot distant comme branche principale du projet en local. Les commandes: git remote add origin URL, git push --set-upstream origin master.
 # Etapes3: Récevoir des mises à jour d'un dépot depuis Github
 Lorsque nous travaillons sur un projet en équipe, il est indispensable d'etre toujours informé de toute les modifications et obtenir toujours des mises à jour des récents modification faite dans le dépot que vous suivez. les commandes comme: git fetch origin, git log origin/master, git diff origin/master et git pull origin, git branch -a, git branch -r
+# Etape4: Vérification des branches en locale et distante
+git branch -a (voir toute les branches locales et distantes), git branch -r (voir uniquement les branches distantes)
