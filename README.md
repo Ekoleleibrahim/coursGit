@@ -20,3 +20,5 @@ Les étapes de la réalisation d'un projet en équipe. Nous avons appris 5 étap
 - Fusion du code: Vous ne devez pas arrivé à cet étape que si vous etes rassuré des modifications apportées dans le projet car ceci consiste à fusionner les modifications avec la branche principale. Si vous n'etes pas encore rassuré des modifications, il faut continuer d'apporter des modifications, correction des bugs avant de faire la fusion.
 # Etape7: Github Fork
 Cette étape consiste à avoir une copie d'un projet que vous voulez y contribuer ou vous voulez lancer votre projet à partir d'un projet quelconque. Un *Fork* n'est tout simplement que la copie d'un projet.
+# Etape8: Cloner un dépot distant
+utilisation de la commande git clone Url afin d'avoir une copie d'un projet en locale afin de travailler dessus.
