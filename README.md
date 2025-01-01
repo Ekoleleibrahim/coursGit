@@ -21,4 +21,26 @@ Les étapes de la réalisation d'un projet en équipe. Nous avons appris 5 étap
 # Etape7: Github Fork
 Cette étape consiste à avoir une copie d'un projet que vous voulez y contribuer ou vous voulez lancer votre projet à partir d'un projet quelconque. Un *Fork* n'est tout simplement que la copie d'un projet.
 # Etape8: Cloner un dépot distant
-utilisation de la commande git clone Url afin d'avoir une copie d'un projet en locale afin de travailler dessus.
+utilisation de la commande git clone Url afin d'avoir une copie d'un projet en locale afin de travailler dessus. Utiliser les commandes comme git remote -v, git remote rename origin upstream.
+# Etape9: Ignorer des fichiers avec Git
+Pour ce faire utiliser un fichier *.gitignore* et mettez à l'intérieur toute les dossiers ou fichiers que vous voulez que Git ne les suivent pas. Par exemple: des fichiers de log (.log), des fichiers temporaires, des fichiers cachés, dossiers personnels, etc ...
+N.B: Seul votre fichier *.gitignore* sera suivi par Git.
+Si vous voulez ignoré des fichiers sans les afficher sur *.gitignore*, placez-les dans ce fichier dans cet emplacement *.git/info/exclude.
+# Etape 10: Le Protocole SSH avec Git et Github
+Le SSH est un protocole réseau shell sécurisé qui permet la gestion d'un réseau, le transfert des fichiers à distance et l'accès à un système distant; Il permet d'établir un réseau sécurisé, authentifié et chiffré. Il est utile de l'utiliser lorsque vous utilisez des réseaux non sécurisées.
+Lors de la génération d'une paire de clés SSH vous aurez une *clé publique* et une *clé privé*.
+-Une clé publique : est celle que vous partagez avec la partie distante.
+-Une clé privé: est celle que vous gardez vous meme dans un lieu sur.
+N.B: Une clé publique dérive de la clé privé et non vice versa.
+
+exemple: ssh-keygen -t rsa -b 4096 -C "votre email" : permettra de générer une paire de clés.
+
+# Remarque : Vous serez appélé à :
+- Déterminer l'emplacement pour votre clé
+- Saisir une phrase de passe. Ceci vous permet d'ajouter une couche de sécurité pour la clé car à chaque fois que vous en aurez besoin, vous devez saisir cette pharse de passe.
+
+utilisez la commande *ssh-add /Users/emplacement* afin d'ajouter la pire de clés SSH à l'agent SSH.
+
+Tester la connexion avec Github: en utilisant la commande *ssh -T git@github.com*. Si vous voyez votre nom s'afficher, bravo! la connexion a été établie.
+
+Changer un remote d'origine de HTTPS en SSH ou vice versa avec la commande *git remote set-url origin URL_SSH/URL_HTTPS*
