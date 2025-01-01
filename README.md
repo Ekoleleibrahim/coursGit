@@ -44,3 +44,26 @@ utilisez la commande *ssh-add /Users/emplacement* afin d'ajouter la pire de clé
 Tester la connexion avec Github: en utilisant la commande *ssh -T git@github.com*. Si vous voyez votre nom s'afficher, bravo! la connexion a été établie.
 
 Changer un remote d'origine de HTTPS en SSH ou vice versa avec la commande *git remote set-url origin URL_SSH/URL_HTTPS*
+
+# Etape11: Git Revert
+*Revert* est une commande Git qui vous permet d'écraser ce que vous avez fait comme commit modification en locale mais en gardant l'historique des modifications. Pour ce faire:
+- Recherchez le commit à écraser (git log)
+- Ecrasez-le
+
+*git reset HEAD*: Ceci vous permet d'écraser le commit précédent (le dernier commit que vous avez fait). On peut ajout *l'option --no-edit* afin d'ignorer le message du commit et de laisser le dernier message par défaut.
+
+* Si vous voulez écraser les modifications d'un commit spécifique, prenez le *commit hash (Une suite de caractère d'un commit)* et tapez la commande *git revert commithash* ensuite vous puvez ignoré le message du commit.  
+
+# Etape12: Git Reset 
+*Reset* est une commande qui vous permet de revenir au commit précédent lorsqu'il est important et cela supprimera toutes les modifications qui vient après le commit sur lequel vous etes revenu.
+
+* N.B: Il est dangereux de modifier l'historique de modification d'un dépot. Il est generalement acceptable d'effectuer ce type de modification dans votre propre dépot en local.
+Evitez de le faire dans le *remote dépot* en particulier d'autres personnes travaillent dessus.
+Meme si les commits n'apparaissent plus dans le log, ils sont pas supprimé par Git.
+
+# Etape 13 & Fin: Git Amend
+Avec la commande *git commit --amend "message du commit"* vous pouvez modifier le message d'un commit. Cette modification se fera à partir du *staging, le dernier commit et créera un nouveau commit*. Cette commit créer remplacera entièrement le dernier commit.
+
+* N.B: IL n'est pas conseillé de cette action. Mais toute fois si cela est nécessaire, vous pouvez le faire.
+
+# FIN
